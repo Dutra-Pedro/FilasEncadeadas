@@ -30,8 +30,7 @@ public class FilaString {
         valor = ini.dado;
         ini = ini.prox;
         if (ini == null) {
-            System.out.println("Fila vazia");
-            fim = ini;
+            fim = null;
         }
         return valor;
     }

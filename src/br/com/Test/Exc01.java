@@ -15,7 +15,10 @@ public class Exc01 {
         while (valor > 0){
                 System.out.println("Digite um valor:");
                 valor = S.nextInt();
-                fila.enqueue(valor);
+                if (valor > 0)
+                    fila.enqueue(valor);
+                else
+                    break;
         }
 
         System.out.println("Encerrando...");
